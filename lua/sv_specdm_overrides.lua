@@ -417,8 +417,11 @@ hook.Add("AcceptInput", "AcceptInput_Ghost", function(ent, name, activator, call
 	end
 	if IsValid(ent) and IsValid(caller) and IsValid(activator) then --Make sure all our entites are valid
             if ent:GetClass() == "trigger_multiple" or caller:GetClass() == "trigger_multiple" then --Look for trigger_multiple
-                --print(ent:GetClass(),activator:GetClass(),caller:GetClass())
-                return activator:IsGhost() --Check if ghost if they are stop the activation of them
+                if activator.IsGhost and activator:IsGhost() then
+			return true
+		else
+			reutrn false
+               end
             end
         end		
 end)
