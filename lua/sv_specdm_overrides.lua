@@ -420,7 +420,7 @@ hook.Add("AcceptInput", "AcceptInput_Ghost", function(ent, name, activator, call
                 if activator.IsGhost and activator:IsGhost() then
 			return true
 		else
-			reutrn false
+			return false
                end
             end
         end		
