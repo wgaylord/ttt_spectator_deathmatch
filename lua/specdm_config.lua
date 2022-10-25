@@ -28,10 +28,10 @@ SpecDM.DisplayMessage = true
 SpecDM.EnableJoinMessages = true
 
 -- Mute alive players by default when you join the specdm
-SpecDM.MuteAlive = true
+SpecDM.MuteAlive = false
 
 -- F-Key to open the statistics menu
-SpecDM.StatsFKey = KEY_F7
+SpecDM.StatsFKey = KEY_F6
 
 -- Enable HP regeneration
 SpecDM.HP_Regen = true
