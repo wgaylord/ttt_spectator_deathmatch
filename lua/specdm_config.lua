@@ -42,24 +42,25 @@ SpecDM.AutoIncludeWeapons = true
 -- When AutoIncludeWeapons is set to true the table will be emptied before adding all ghost weapons
 SpecDM.Ghost_weapons = {
 	secondary = {
-		"weapon_ttt_glock",
-		"weapon_zm_pistol",
-		"weapon_zm_revolver",
-		"weapon_ttt_sipistol"
+		"weapon_ghost_glock",
+		"weapon_ghost_pistol",
+		"weapon_ghost_revolver",
+		"weapon_ghost_magnum"
 	},
 	primary = {
-		"weapon_ttt_ak47",
-		"weapon_ttt_aug",
-		"weapon_ttt_awp",
-		"weapon_ttt_galil",
-		"weapon_zm_sledge",
-		"weapon_zm_mac10",
-		"weapon_ttt_famas",
-		"weapon_ttt_ar2",
-		"weapon_ttt_sg552",
-		"weapon_ttt_knife"
+		"weapon_ghost_ak47",
+		"weapon_ghost_augbar",
+		"weapon_ghost_awp",
+		"weapon_ghost_galil",
+		"weapon_ghost_sledge",
+		"weapon_ghost_mac10",
+		"weapon_ghost_hl2smg",
+		"weapon_ghost_mp5",
+		"weapon_ghost_shotgun",
+		"weapon_ghost_rifle"
 	}
 }
+
 
 -- Enabled the loadout and allow players to select their favorite weapons?
 SpecDM.LoadoutEnabled = true
