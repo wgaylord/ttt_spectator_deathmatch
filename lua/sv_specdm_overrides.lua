@@ -232,13 +232,13 @@ hook.Add("Initialize", "Initialize_SpecDM", function()
 
 		return old_KarmaHurt(attacker, victim, dmginfo)
 	end
-	
+	-[[
 	local old_ScoreHandleKill = SCORE.HandleKill
 	function SCORE.HandleKill(victim, attacker, dmginfo)
 		if (IsValid(attacker) and attacker:IsGhost()) or (IsValid(victim) and victim:IsGhost()) then return end
 
 		return old_ScoreHandleKill(attacker, victim, dmginfo)
-	end
+	end]]
 
 	for _, v in pairs(scripted_ents.GetList()) do
 		if v.ClassName == "base_ammo_ttt" then
